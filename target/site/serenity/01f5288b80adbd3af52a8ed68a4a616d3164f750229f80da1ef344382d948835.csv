@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"To test the GET APIs from https://reqres.in","To verify that the user is able to get the <b>User Information</b> with a respective id","SUCCESS","2019-10-06T13:51:06.0421603+05:30[Asia/Calcutta]","0.0","24.99"
