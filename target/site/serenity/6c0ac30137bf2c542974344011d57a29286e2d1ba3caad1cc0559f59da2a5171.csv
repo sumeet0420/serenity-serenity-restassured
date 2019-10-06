@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"To test the GET APIs from https://reqres.in","To verify that the user is able to get the <b>User Information</b> with a respective id","SUCCESS","2019-10-06T15:02:13.8550558+05:30[Asia/Calcutta]","0.0","33.6"
-"To test the GET APIs from https://reqres.in","To verify that the user is NOT able to get the <b>User Information</b> with an invalid respective id","SUCCESS","2019-10-06T15:02:47.5036087+05:30[Asia/Calcutta]","0.0","0.27"
+"To test the GET APIs from https://reqres.in","To verify that the user is able to get the <b>User Information</b> with a respective id","SUCCESS","2019-10-06T18:53:40.1364492+05:30[Asia/Calcutta]","0.0","8.77"
+"To test the GET APIs from https://reqres.in","To verify that the user is NOT able to get the <b>User Information</b> with an invalid respective id","SUCCESS","2019-10-06T18:53:48.930665+05:30[Asia/Calcutta]","0.0","0.14"
