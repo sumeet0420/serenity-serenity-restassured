@@ -1,6 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.010979">
-<testcase classname="To test the GET APIs from https://reqres.in" name="To verify that the user is able to get the &lt;b&gt;User Information&lt;/b&gt; with a respective id" time="25.010979">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="34.35405">
+<testcase classname="To test the GET APIs from https://reqres.in" name="To verify that the user is able to get the &lt;b&gt;User Information&lt;/b&gt; with a respective id" time="34.085164">
 <system-out><![CDATA[Given the user needs the information of user 2..............................passed
+Then verify that status code is 200.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test the GET APIs from https://reqres.in" name="To verify that the user is NOT able to get the &lt;b&gt;User Information&lt;/b&gt; with an invalid respective id" time="0.146491">
+<system-out><![CDATA[Given the user needs the information of user 23.............................passed
+Then verify that status code is 404.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test the GET APIs from https://reqres.in" name="To verify that the user is NOT able to get the &lt;b&gt;User Information&lt;/b&gt; with an invalid respective id 2" time="0.122395">
+<system-out><![CDATA[Given the user needs the information of user 23.............................passed
 Then verify that status code is 200.........................................passed
 ]]></system-out>
 </testcase>

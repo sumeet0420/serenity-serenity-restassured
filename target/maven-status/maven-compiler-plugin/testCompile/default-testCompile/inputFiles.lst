@@ -1,8 +1,8 @@
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\cucumber\stepdefinition\CreateUsersStepDefinition.java
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\cucumber\stepdefinition\TestBase.java
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\cucumber\stepdefinition\UsersStepDefinitions.java
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\cucumber\runner\GetUserRunner.java
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\cucumber\serenity\UsersSteps.java
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\utils\ResponseHolder.java
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\utils\POSTUserPayload.java
-C:\Users\Agrawal\eclipse-workspace-new\restassured-serenity\src\test\java\com\studentapp\cucumber\serenity\CreateUsersSteps.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\cucumber\serenity\UsersSteps.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\utils\POSTUserPayload.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\cucumber\stepdefinition\CreateUsersStepDefinition.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\cucumber\stepdefinition\UsersStepDefinitions.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\cucumber\stepdefinition\TestBase.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\cucumber\runner\GetUserRunner.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\utils\ResponseHolder.java
+E:\QA2QE\git serenity\serenity-serenity-restassured\src\test\java\com\studentapp\cucumber\serenity\CreateUsersSteps.java

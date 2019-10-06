@@ -21,9 +21,9 @@ public class UsersStepDefinitions{
 		response = usersSteps.getUserById(id);
 	}
 	
-	/*
-	 * @Then("^verify that status code is (\\d+)$") public void
-	 * verify_that_status_code_is(int code) {
-	 * response.assertThat().statusCode(code); }
-	 */
+	
+	  @Then("^verify that status code is (\\d+)$") public void
+	  verify_that_status_code_is(int code) {
+	  response.assertThat().statusCode(code); }
+	 
 }

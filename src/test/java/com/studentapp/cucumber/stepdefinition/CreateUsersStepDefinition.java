@@ -19,9 +19,6 @@ public class CreateUsersStepDefinition{
 	  HtmlTable.withColumns(""); }
 	 
 	
-	  @Then("^verify that status code is (\\d+)$") public void
-	  verify_that_status_code_is(int code) {
-	  //response.assertThat().statusCode(code);
-	  }
+	  
 	 
 }
