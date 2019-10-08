@@ -1,0 +1,26 @@
+def labels = ['@Regression and @Negative', '@Regression and @Positive'] // labels for Jenkins node types we will build on
+def builders = [:]
+parallel builders
+def xml_report = 'target/cucumber-reports/xml/report.xml'
+node {
+   stage('Source code') { // for display purposes
+      git "https://github.com/sumeet0420/serenity-serenity-restassured.git"
+   }
+   parallel first: {
+        stage('Build Positive') {
+            echo 'mvn clean verify -Dcucumber.options="--tags @Regression and @Negative" -Dcucumber.options="--plugin junit:target/cucumber/xml/report.xml" -Dcucumber.options="--plugin html:target/cucumber-reports/html --plugin junit:target/cucumber-reports/xml/report.xml" serenity:aggregate'
+            bat('mvn clean verify -Dcucumber.options="--tags @Regression and @Negative" -Dcucumber.options="--plugin junit:target/cucumber/xml/report.xml" -Dcucumber.options="--plugin html:target/cucumber-reports/html --plugin junit:target/cucumber-reports/xml/report_1.xml" serenity:aggregate')
+         }
+   },
+    second: {
+        stage('Build Negative') {
+            echo 'mvn clean verify -Dcucumber.options="--tags @Regression and @Positive" -Dcucumber.options="--plugin junit:target/cucumber/xml/report.xml" -Dcucumber.options="--plugin html:target/cucumber-reports/html --plugin junit:target/cucumber-reports/xml/report.xml" serenity:aggregate'
+         bat('mvn clean verify -Dcucumber.options="--tags @Regression and @Positive" -Dcucumber.options="--plugin junit:target/cucumber/xml/report.xml" -Dcucumber.options="--plugin html:target/cucumber-reports/html --plugin junit:target/cucumber-reports/xml/report_2.xml" serenity:aggregate')
+            
+        }
+    }
+    stage('Results') {
+                junit "target/cucumber-reports/xml/report_*.xml"
+
+    }
+}
