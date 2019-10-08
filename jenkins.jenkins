@@ -2,6 +2,7 @@ node {
     stage('Source code') {
       git "https://github.com/sumeet0420/serenity-serenity-restassured.git"
     }
+    try{
     parallel first: {
         stage('Build Positive') {
             bat('mvn clean verify -Dcucumber.options="--tags @Positive --plugin junit:target/cucumber-reports/xml/report_1.xml" serenity:aggregate')
@@ -10,6 +11,10 @@ node {
         stage('Build Negative') {
             bat('mvn clean verify -Dcucumber.options="--tags @Negative --plugin junit:target/cucumber-reports/xml/report_2.xml" serenity:aggregate')
         }
+    },
+    failFast: true
+    } catch(Exception e){
+       print('There are failed cases.') 
     }
     stage('Results') {
         junit "target/cucumber-reports/xml/report_*.xml"
